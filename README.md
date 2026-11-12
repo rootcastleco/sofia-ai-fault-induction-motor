@@ -1,19 +1,19 @@
-# Sofia AI: Fault Induction Motor Classifier 🚀
+# Sofia AI: Fault Induction Motor Classifier 
 
 This repository contains a deep learning-based fault detection and classification system for induction motors using PyTorch. The model is built on a custom **1D Convolutional Neural Network (1D CNN)** designed to analyze high-frequency time-series sensor data from motors (normal vs. imbalance/faulty conditions).
 
-## 📊 Project Highlights
+##  Project Highlights
 - **Dataset:** Fault Induction Motor Dataset (Kaggle)
 - **Architecture:** 1D CNN (Conv1D layers, MaxPool1D, AdaptiveAvgPool1D, and Linear Classifier)
-- **Test Accuracy:** **99.73%** 🔥
-- **ROC AUC:** **0.99985** 📈
-- **Average Precision (AP):** **0.99984** 🎯
+- **Test Accuracy:** **99.73%** 
+- **ROC AUC:** **0.99985** 
+- **Average Precision (AP):** **0.99984** 
 - **Loss Function:** Cross-Entropy Loss
 - **Optimizer:** Adam (Learning Rate: 0.001)
 
 ---
 
-## 📈 Model Performance & Evaluation
+##  Model Performance & Evaluation
 The trained model achieved near-perfect performance during evaluation on unseen test datasets, with only 4 misclassifications out of 1,494 samples.
 
 ### Confusion Matrix
@@ -40,7 +40,7 @@ weighted avg       1.00      1.00      1.00      1494
 
 ---
 
-## 🛠️ Tech Stack & Libraries
+##  Tech Stack & Libraries
 - **Language:** Python 3
 - **Deep Learning Framework:** PyTorch
 - **Data Manipulation:** Pandas, NumPy, Scikit-learn
@@ -48,7 +48,7 @@ weighted avg       1.00      1.00      1.00      1494
 
 ---
 
-## 💾 Repository Structure
+##  Repository Structure
 ```bash
 ├── sofia_ai_fault_induction_motor.pt  # Saved PyTorch Model Weights
 ├── confusion_matrix.png               # Model evaluation performance plot
@@ -58,7 +58,7 @@ weighted avg       1.00      1.00      1.00      1494
 
 ---
 
-## 🎯 How to Load the Model in PyTorch
+##  How to Load the Model in PyTorch
 
 To load the pretrained model weights into your PyTorch environment, use the following code structure:
 
