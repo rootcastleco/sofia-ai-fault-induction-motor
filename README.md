@@ -6,6 +6,8 @@ This repository contains a deep learning-based fault detection and classificatio
 - **Dataset:** Fault Induction Motor Dataset (Kaggle)
 - **Architecture:** 1D CNN (Conv1D layers, MaxPool1D, AdaptiveAvgPool1D, and Linear Classifier)
 - **Test Accuracy:** **99.73%** 🔥
+- **ROC AUC:** **0.99985** 📈
+- **Average Precision (AP):** **0.99984** 🎯
 - **Loss Function:** Cross-Entropy Loss
 - **Optimizer:** Adam (Learning Rate: 0.001)
 
@@ -18,6 +20,11 @@ The trained model achieved near-perfect performance during evaluation on unseen 
 Below is the confusion matrix illustrating the classification performance on the test set:
 
 ![Confusion Matrix](confusion_matrix.png)
+
+### Advanced Metrics (ROC & Precision-Recall Curves)
+To further validate the model robustness, we evaluated the ROC (Receiver Operating Characteristic) and Precision-Recall curves. Both areas are near-perfect:
+
+![Advanced Metrics](advanced_metrics.png)
 
 ### Classification Report
 ```text
@@ -45,6 +52,7 @@ weighted avg       1.00      1.00      1.00      1494
 ```bash
 ├── sofia_ai_fault_induction_motor.pt  # Saved PyTorch Model Weights
 ├── confusion_matrix.png               # Model evaluation performance plot
+├── advanced_metrics.png               # ROC and Precision-Recall plots
 └── README.md                          # Project documentation
 ```
 
